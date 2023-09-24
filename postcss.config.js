@@ -1,9 +1,10 @@
-const postcssPresetEnv = require("postcss-preset-env");
+import postcssPresetEnv from "postcss-preset-env";
 
-module.exports = {
+export default {
   plugins: [
     postcssPresetEnv({
-      stage: 0,
+      stage: 3,
+      features: {},
     }),
   ],
 };
